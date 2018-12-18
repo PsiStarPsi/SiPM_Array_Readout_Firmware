@@ -3,10 +3,15 @@
 *.html
 
 
+#files I have which I'm pretty sure are useless for the SDK software needed..
 SDK_files/A.20-Mux-soft.xpr/
 SDK_files/.metadata/
+SDK_files/standalone_bsp_0/
 
+edk*
 
+firmware-ethernet/ExampleProject/ise/elaborate/
+firmware-ethernet/ExampleProject/ise/iseconfig/
 
 #VHDL file types to ignore
 *.debug

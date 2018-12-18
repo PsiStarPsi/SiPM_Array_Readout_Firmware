@@ -1,0 +1,13 @@
+-p
+xc6slx150tfgg676-3
+-lang
+vhdl
+-intstyle
+ise
+-toplevel
+no
+-ti
+microblaze_0_i
+-msg
+__xps/ise/xmsgprops.lst
+microblaze_0.mhs

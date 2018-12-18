@@ -2,7 +2,14 @@
 #ignore all generated html files
 *.html
 
+
+SDK_files/A.20-Mux-soft.xpr/
+SDK_files/.metadata/
+
+
+
 #VHDL file types to ignore
+*.debug
 *.asy
 *.bat
 *.bld
@@ -45,6 +52,7 @@
 *.xrpt
 *.mrp
 *.ngm
+
 
 #tentative ignore of xco like files
 *.in

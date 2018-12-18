@@ -1,0 +1,84 @@
+x13a14
+> --use IEEE.NUMERIC_STD.ALL;
+19a21,23
+>       NUM_IP_G        : integer := 1;
+>       MTU_SIZE_G      : integer := 1500;
+>       LITTLE_ENDIAN_G : boolean := true;
+31c35,39
+<       -- Data to/from GT (62.5 MHz clock domain)
+---
+>       -- Addressing
+>       macAddr         : in  MacAddrType := MAC_ADDR_DEFAULT_C;
+>       ipAddrs         : in  IpAddrArray(NUM_IP_G-1 downto 0) := (others => IP_ADDR_DEFAULT_C);
+>       udpPorts        : in  Word16Array(NUM_IP_G-1 downto 0) := (others => (others => '0'));
+>       -- Data to/from GT
+37,39c45,57
+<       -- MAC TX/RX data (125 MHz clock domain)
+<       macTxData       : in  EthMacDataType;
+<       macRxData       : out EthMacDataType
+---
+>       statusArpDone   : out slv(NUM_IP_G-1 downto 0);
+>       -- User clock and reset
+>       userClk         : in  sl;
+>       userRst         : in  sl;
+>       -- User data interfaces
+>       userTxData      : in  Word32Array(NUM_IP_G-1 downto 0);
+>       userTxDataValid : in  slv(NUM_IP_G-1 downto 0);
+>       userTxDataLast  : in  slv(NUM_IP_G-1 downto 0);
+>       userTxDataReady : out slv(NUM_IP_G-1 downto 0);
+>       userRxData      : out Word32Array(NUM_IP_G-1 downto 0);
+>       userRxDataValid : out slv(NUM_IP_G-1 downto 0);
+>       userRxDataLast  : out slv(NUM_IP_G-1 downto 0);
+>       userRxDataReady : in  slv(NUM_IP_G-1 downto 0)
+44a63,65
+>    signal macTxData : EthMacDataType;
+>    signal macRxData : EthMacDataType;   
+> 
+56a78,112
+>    -- Core Ethernet Interface --
+>    -----------------------------
+>    U_EthCore : entity work.EthCore 
+>       generic map (
+>          NUM_IP_G        => NUM_IP_G,
+>          MTU_SIZE_G      => MTU_SIZE_G,
+>          LITTLE_ENDIAN_G => LITTLE_ENDIAN_G,
+>          GATE_DELAY_G    => GATE_DELAY_G
+>       )
+>       port map ( 
+>          -- 125 MHz clock and reset
+>          ethClk          => eth125Clk,
+>          ethRst          => eth125Rst,
+>          -- Addressing
+>          macAddr         => macAddr,
+>          ipAddrs         => ipAddrs,
+>          udpPorts        => udpPorts,
+>          -- Connection to physical interface (GT or otherwise)
+>          macTxData       => macTxData,
+>          macRxData       => macRxData,
+>          -- User clock and reset
+>          userClk         => userClk,
+>          userRst         => userRst,
+>          -- Connection to user logic
+>          userTxData      => userTxData,
+>          userTxDataValid => userTxDataValid,
+>          userTxDataLast  => userTxDataLast,
+>          userTxDataReady => userTxDataReady,
+>          userRxData      => userRxData,
+>          userRxDataValid => userRxDataValid,
+>          userRxDataLast  => userRxDataLast,
+>          userRxDataReady => userRxDataReady
+>       );
+> 
+>    -----------------------------
+73c129
+<          -- MAC (8 bit) data interface in
+---
+>          -- MAC (8 bit) data interface out
+88c144
+<          -- PHY (16 bit) data interface in
+---
+>          -- PHY (16 bit) data interface
+90c146
+<          -- MAC (8 bit) data interface out
+---
+>          -- MAC (8 bit) data interface

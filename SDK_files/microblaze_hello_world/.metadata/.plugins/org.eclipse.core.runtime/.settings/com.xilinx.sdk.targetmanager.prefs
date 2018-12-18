@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+jtag.settings=\ -cable type xilinx_tcf url TCP\:svsc-a-w109.phys.hawaii.edu\:3121

@@ -1,0 +1,421 @@
+21:48:24.589 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:24.606 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.232 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.236 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.246 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.249 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.807 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.810 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.822 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:28.825 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:31.009 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:31.012 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:32.948 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:35.000 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:48:35.003 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:12.744 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:12.766 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:19.927 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:19.929 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:20.109 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:20.112 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:23.184 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:23.195 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:24.051 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:24.054 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:28.672 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+21:55:28.674 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:01:46.006 INFO  - Processing command line option -hwspec /home/ise/ise-shared/trash_1/firmware-ethernet/ExampleProject/ise/microblaze_0/SDK/SDK_Export/hw/microblaze_0.xml. 
+22:02:14.235 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:02:14.238 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:02:14.361 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:02:14.364 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:02:16.768 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:02:18.221 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:02:18.223 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_hello_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+22:04:05.915 INFO  - Project test_hello_bsp was a BSP project. Please update references. 
+22:04:05.924 ERROR - SDK has detected that project test_hello_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+22:05:05.208 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+22:10:35.883 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+22:11:03.496 INFO  - System reset is completed. 
+22:13:29.125 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:13:31.514 INFO  - System reset is completed. 
+22:14:17.451 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+22:14:17.455 WARN  - Terminating existing sessions on processor microblaze_0 
+22:23:43.542 INFO  - System reset is completed. 
+22:30:01.162 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:30:04.951 INFO  - System reset is completed. 
+22:31:21.322 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:32:51.817 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:32:53.426 INFO  - System reset is completed. 
+22:34:32.355 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:34:33.499 INFO  - System reset is completed. 
+22:35:29.700 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:35:31.153 INFO  - System reset is completed. 
+22:37:15.335 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:37:16.875 INFO  - System reset is completed. 
+22:37:27.765 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:40:08.254 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:40:12.845 INFO  - System reset is completed. 
+22:45:48.616 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:45:50.180 INFO  - System reset is completed. 
+22:53:38.571 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:53:42.465 INFO  - System reset is completed. 
+22:58:22.727 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+22:58:22.737 WARN  - Terminating existing sessions on processor microblaze_0 
+00:38:33.261 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+00:39:39.036 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+00:42:36.984 INFO  - System reset is completed. 
+00:43:19.043 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+00:43:19.055 WARN  - Terminating existing sessions on processor microblaze_0 
+00:47:59.940 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+00:48:26.417 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+00:55:15.817 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+01:21:22.370 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+01:32:30.612 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+01:32:40.279 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+01:33:34.949 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+01:37:19.608 WARN  - Terminating existing sessions on processor microblaze_0 
+01:37:24.719 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+02:18:00.532 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:19:26.559 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:21:05.782 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:22:04.711 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:22:39.507 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:29:00.610 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Debug Operation Not Supported on the Target
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+02:29:08.313 INFO  - System reset is completed. 
+02:30:44.781 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+02:30:44.784 WARN  - Terminating existing sessions on processor microblaze_0 
+02:32:28.856 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:32:33.593 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:32:40.936 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:32:45.779 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:32:53.492 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:32:58.018 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:33:07.018 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to the Xilinx hw_server. Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+ 
+02:33:25.048 INFO  - System reset is completed. 
+02:44:40.508 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Debug Operation Not Supported on the Target
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+02:44:47.209 INFO  - System reset is completed. 
+02:48:19.779 WARN  - Terminating existing sessions on processor microblaze_0 
+02:48:24.763 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+02:51:23.534 WARN  - Terminating existing sessions on processor microblaze_0 
+02:51:28.680 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+02:52:07.320 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+02:55:09.122 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+02:57:41.802 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:05:39.643 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+03:12:33.950 WARN  - Terminating existing sessions on processor microblaze_0 
+03:12:39.091 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:13:05.134 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:13:52.484 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:14:11.762 INFO  - System reset is completed. 
+03:17:09.763 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:18:14.664 INFO  - System reset is completed. 
+03:18:59.552 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+03:19:15.015 WARN  - Terminating existing sessions on processor microblaze_0 
+03:19:20.690 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:22:36.808 INFO  - System reset is completed. 
+03:23:07.740 WARN  - Terminating existing sessions on processor microblaze_0 
+03:23:13.359 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:29:35.821 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+03:39:34.023 INFO  - FPGA configured successfully with bitstream "/home/ise/ise-shared/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+03:49:40.435 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:16:47.839 INFO  - Processing command line option -hwspec /home/ise/Documents/Projects/11_9_working_version_sim/trash_1/firmware-ethernet/ExampleProject/ise/microblaze_0/SDK/SDK_Export/hw/microblaze_0.xml. 
+10:16:52.859 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+10:16:56.765 INFO  - Copied contents of /home/ise/Documents/Projects/11_9_working_version_sim/trash_1/firmware-ethernet/ExampleProject/ise/microblaze_0/SDK/SDK_Export/hw/scrodEthernetExample.bit into /microblaze_0_hw_platform_0/system.bit. 
+10:16:56.767 INFO  - Copied contents of /home/ise/Documents/Projects/11_9_working_version_sim/trash_1/firmware-ethernet/ExampleProject/ise/microblaze_0/SDK/SDK_Export/hw/edkBmmFile_bd.bmm into /microblaze_0_hw_platform_0/system_bd.bmm. 
+10:22:06.241 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+10:22:15.911 INFO  - System reset is completed. 
+10:23:45.900 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:30:32.455 WARN  - Terminating existing sessions on processor microblaze_0 
+11:30:46.911 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+11:30:54.031 INFO  - System reset is completed. 
+11:31:03.474 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:41:46.095 WARN  - Terminating existing sessions on processor microblaze_0 
+11:41:50.734 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+11:44:02.401 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:44:04.232 INFO  - System reset is completed. 
+11:44:19.704 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:13:57.624 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:13:13.472 WARN  - Terminating existing sessions on processor microblaze_0 
+13:13:17.976 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+13:13:54.807 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:13:56.963 INFO  - System reset is completed. 
+13:58:33.659 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+13:58:52.646 INFO  - System reset is completed. 
+14:43:19.180 WARN  - Terminating existing sessions on processor microblaze_0 
+14:43:23.742 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+14:43:29.178 INFO  - System reset is completed. 
+16:27:55.565 WARN  - Terminating existing sessions on processor microblaze_0 
+16:28:10.039 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+16:28:13.015 INFO  - System reset is completed. 
+16:28:25.283 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:28:27.025 INFO  - System reset is completed. 
+17:08:43.962 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+17:08:48.399 INFO  - System reset is completed. 
+17:29:48.794 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+17:29:58.496 INFO  - System reset is completed. 
+18:29:47.410 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+18:29:59.279 INFO  - System reset is completed. 
+18:30:59.738 WARN  - Terminating existing sessions on processor microblaze_0 
+18:31:14.234 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+18:31:25.867 INFO  - System reset is completed. 
+18:32:26.857 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+18:32:26.866 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:33:10.755 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+18:33:15.444 INFO  - System reset is completed. 
+18:51:40.878 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+18:51:44.171 INFO  - System reset is completed. 
+19:07:56.258 WARN  - Terminating existing sessions on processor microblaze_0 
+19:08:00.896 INFO  - FPGA configured successfully with bitstream "/home/ise/Documents/Projects/11_9_working_version_sim/trash_1/SDK_files/microblaze_hello_world/microblaze_0_hw_platform_0/download.bit" 
+19:08:04.555 INFO  - System reset is completed. 
+20:21:34.900 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:21:34.905 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

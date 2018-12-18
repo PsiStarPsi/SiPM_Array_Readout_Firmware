@@ -1,0 +1,234 @@
+NET gtTxP     LOC = B6;
+NET gtTxN     LOC = A6;
+NET gtRxP     LOC = D7;
+NET gtRxN     LOC = C7;
+NET gtClkP    LOC = B10;
+NET gtClkN    LOC = A10;
+NET fabClkP   LOC = U25;
+NET fabClkN   LOC = U26;
+NET txDisable LOC = E10  | IOSTANDARD = LVCMOS33;
+NET led<0>    LOC = F18  | IOSTANDARD = LVCMOS33;
+NET led<1>    LOC = E18  | IOSTANDARD = LVCMOS33;
+NET led<2>    LOC = G16  | IOSTANDARD = LVCMOS33;
+NET led<3>    LOC = F17  | IOSTANDARD = LVCMOS33;
+NET led<4>    LOC = F20  | IOSTANDARD = LVCMOS33;
+NET led<5>    LOC = E20  | IOSTANDARD = LVCMOS33;
+NET led<6>    LOC = H17  | IOSTANDARD = LVCMOS33;
+NET led<7>    LOC = G17  | IOSTANDARD = LVCMOS33;
+NET led<8>    LOC = C21  | IOSTANDARD = LVCMOS33;
+NET led<9>    LOC = B21  | IOSTANDARD = LVCMOS33;
+NET led<10>   LOC = H18  | IOSTANDARD = LVCMOS33;
+NET led<11>   LOC = H19  | IOSTANDARD = LVCMOS33;
+NET led<12>   LOC = B22  | IOSTANDARD = LVCMOS33;
+NET led<13>   LOC = A22  | IOSTANDARD = LVCMOS33;
+NET led<14>   LOC = G19  | IOSTANDARD = LVCMOS33;
+NET led<15>   LOC = F19  | IOSTANDARD = LVCMOS33;
+
+# NET "fabClk" TNM_NET="fabClk"; 
+TIMESPEC "TS_fabClk"=PERIOD "fabClk" 4 ns HIGH 50 %; 
+NET "U_S6EthTop/U_GtpS6/usrClkSource" TNM_NET="U_GtpS6/usrClkSource";
+TIMESPEC "TS_usrClkSource"=PERIOD "U_GtpS6/usrClkSource" 8 ns HIGH 50 %;
+
+# Effective timing ignores (max delays) for paths that are already handled
+# by a clock domain crossing circuit.
+#INST "*" TNM_NET = FFS "EVERYTHING";
+#INST "*cdc_reg1" TNM_NET = FFS "CLOCK_DOMAIN_CROSSING_REGS";
+#TIMESPEC TS_CDC = FROM "EVERYTHING" TO "CLOCK_DOMAIN_CROSSING_REGS" 8 ns DATAPATHONLY;
+
+#------------------------------------------------------------------------------------------------------
+#------------------------------------------Side A------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------------------------------
+#------------------------------------------Bank 0------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------------------------------
+#------------------------------------------Bank 1 (shared with 5)--------------------------------------
+#------------------------------------------------------------------------------------------------------
+#added
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<7> LOC =  U20;
+
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<3> LOC =  P21;
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<6> LOC =  T24;
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<7> LOC = AA24;
+
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<7> LOC =  T19;
+
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<3> LOC =  R21;
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<5> LOC =  N23;
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<6> LOC =  R24;
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<7> LOC =  W24;
+##
+##------------------------------------------------------------------------------------------------------
+##------------------------------------------Bank 5 (shared with 1)------------------------------------------------------
+##------------------------------------------------------------------------------------------------------
+##ioce(0)
+##added
+##
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<0> LOC =  B25;
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<1> LOC =  E26;
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<4> LOC =  G25;
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<5> LOC =  K26;
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<6> LOC =  L25;
+
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<0> LOC =  F23;
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<1> LOC =  H22;
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<2> LOC =  E24;
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<4> LOC =  J22;
+NET AsicOut_TRIG_OUTPUT_R0_C3_CH<5> LOC =  M23;
+
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<0> LOC =  C26;
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<1> LOC =  E25;
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<4> LOC =  H26;
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<5> LOC =  L26;
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<6> LOC =  M26;
+
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<0> LOC =  E23;
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<1> LOC =  G23;
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<2> LOC =  D24;
+NET AsicOut_TRIG_OUTPUT_R1_C3_CH<4> LOC =  J24;
+#
+###------------------------------------------------------------------------------------------------------
+###------------------------------------------Bank 2--solo bank----------------------------------------------------
+###------------------------------------------------------------------------------------------------------
+###ioce(1)
+###added
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<4> LOC =  AB9;
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<5> LOC =  W12;
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<2> LOC =  AD5;
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<3> LOC =   Y9;
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<6> LOC =  AA6;
+
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<2> LOC =  Y15;
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<3> LOC =  U15;
+
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<2> LOC =  AC6;
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<3> LOC =   W9;
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<4> LOC =  V10;
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<5> LOC =  Y13;
+
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<2> LOC =  V14;
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<3> LOC = AA19;
+
+##
+##
+##------------------------------------------------------------------------------------------------------
+##------------------------------------------bank 3--(shared with 4)----------------------------------------------------
+##------------------------------------------------------------------------------------------------------
+#added
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<5> LOC =   R4;
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<6> LOC =   V4;
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<7> LOC =  AB3;
+
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<2> LOC =   P6;
+NET AsicOut_TRIG_OUTPUT_R0_C2_CH<3> LOC =   U8;
+
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<6> LOC =  P10;
+
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<5> LOC =   P5;
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<6> LOC =   U5;
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<7> LOC =  AA3;
+
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<2> LOC =   R6;
+NET AsicOut_TRIG_OUTPUT_R1_C2_CH<3> LOC =   V7;
+
+#
+###------------------------------------------------------------------------------------------------------
+###------------------------------------------Bank 4----shared with 3-------------------------------------
+###------------------------------------------------------------------------------------------------------
+###ioce(2) bank34
+###added
+#
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<0> LOC =   C1;
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<1> LOC =   D1; 
+NET AsicOut_TRIG_OUTPUT_R0_C0_CH<7> LOC =   H1;
+
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<0> LOC =   N2;
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<1> LOC =   H5;
+NET AsicOut_TRIG_OUTPUT_R0_C1_CH<4> LOC =   M3;
+
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<0> LOC =   C2;
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<1> LOC =   B1;
+NET AsicOut_TRIG_OUTPUT_R1_C0_CH<7> LOC =   J1;
+
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<0> LOC =   N1;
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<1> LOC =   G4;
+NET AsicOut_TRIG_OUTPUT_R1_C1_CH<4> LOC =   L3;
+
+
+#------------------------------------------------------------------------------------------------------
+#------------------------------------------Bank ???------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------------------------------
+#------------------------------------------Side B------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
+
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<0> LOC =   F1;
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<1> LOC =   E2;
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<2> LOC =  AA7;
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<3> LOC =  AB7;
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<4> LOC =  W10;
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<5> LOC = AA11;
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<6> LOC =  Y12;
+#NET AsicOut_TRIG_OUTPUT_R2_C0_CH<7> LOC =   G1;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<0> LOC =   F3;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<1> LOC =   K3;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<2> LOC =  W16;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<3> LOC = AA21;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<4> LOC =   N5;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<5> LOC =   U3;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<6> LOC =   Y3;
+#NET AsicOut_TRIG_OUTPUT_R2_C1_CH<7> LOC =  AC4;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<0> LOC =  A25;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<1> LOC =  C25;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<2> LOC =   M8;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<3> LOC =   R8;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<4> LOC =  F26;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<5> LOC =  J25;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<6> LOC =   U9;
+#NET AsicOut_TRIG_OUTPUT_R2_C2_CH<7> LOC =  K18;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<0> LOC =  H24;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<1> LOC =  K24;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<2> LOC =  F22;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<3> LOC =  M19;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<4> LOC =  M24;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<5> LOC =  P24;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<6> LOC =  V24;
+#NET AsicOut_TRIG_OUTPUT_R2_C3_CH<7> LOC = AC23;
+
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<0> LOC =   E1;
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<1> LOC =   B2;
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<2> LOC =   W7;
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<3> LOC =  AA8;
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<4> LOC = AB11;
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<5> LOC = AA13;
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<6> LOC =  V13;
+#NET AsicOut_TRIG_OUTPUT_R3_C0_CH<7> LOC =   G2;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<0> LOC =   E3;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<1> LOC =   J4;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<2> LOC = AA18;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<3> LOC =  Y17;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<4> LOC =   N3;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<5> LOC =   T3;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<6> LOC =   W3;
+#NET AsicOut_TRIG_OUTPUT_R3_C1_CH<7> LOC =  AB5;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<0> LOC =  B26;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<1> LOC =  D26;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<2> LOC =   N7;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<3> LOC =   T8;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<4> LOC =  G26;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<5> LOC =  J26;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<6> LOC =  R18;
+#NET AsicOut_TRIG_OUTPUT_R3_C2_CH<7> LOC =  V21;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<0> LOC =  G24;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<1> LOC =  J23;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<2> LOC =  F24;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<3> LOC =  N20;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<4> LOC =  K22;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<5> LOC =  L23;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<6> LOC =  T22;
+#NET AsicOut_TRIG_OUTPUT_R3_C3_CH<7> LOC = AB24;

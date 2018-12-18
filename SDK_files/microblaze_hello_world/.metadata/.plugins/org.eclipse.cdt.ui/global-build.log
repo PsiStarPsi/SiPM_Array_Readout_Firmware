@@ -1,0 +1,358 @@
+02:47:31 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+02:48:25 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+02:49:31 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+02:49:32 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+02:51:29 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+02:52:08 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+02:55:10 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+02:56:08 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+02:56:09 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+02:57:42 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:05:15 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:05:16 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:05:34 **** Auto Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: LAPPDKrang.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "LAPPDKrang.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAPPDKrang.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size LAPPDKrang.elf  |tee "LAPPDKrang.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12798	   1372	   8996	  23166	   5a7e	LAPPDKrang.elf
+Finished building: LAPPDKrang.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck LAPPDKrang.elf -hw ../../microblaze_0_hw_platform_0/system.xml -pe microblaze_0  |tee "LAPPDKrang.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_0_hw_platform_0/system.xml -pe
+microblaze_0 LAPPDKrang.elf 
+
+ELF file	: LAPPDKrang.elf
+elfcheck passed.
+Finished building: LAPPDKrang.elf.elfcheck
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:05:38 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:05:38 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/helloworld.d' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:12:40 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:13:06 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:13:53 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:14:09 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:14:10 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/helloworld.d' has modification time 1.1e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:17:10 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:18:12 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:18:13 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/helloworld.d' has modification time 8.8e+02 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:18:58 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:18:58 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/helloworld.d' has modification time 8.3e+02 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:19:21 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:19:26 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:22:34 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:22:35 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/helloworld.d' has modification time 6.1e+02 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+03:23:14 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:29:29 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:29:30 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/helloworld.d' has modification time 2e+02 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:39:34 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+03:47:20 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+03:47:21 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 1.6e+03 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for `all'.
+06:38:49 **** Clean-only build of configuration Release for project LAPPDKrang ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  LAPPDKrang.elf.size  LAPPDKrang.elf.elfcheck  LAPPDKrang.elf
+ 
+06:38:50 **** Auto Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Warning: File `objects.mk' has modification time 1.4 s in the future
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: LAPPDKrang.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "LAPPDKrang.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAPPDKrang.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size LAPPDKrang.elf  |tee "LAPPDKrang.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12798	   1372	   8996	  23166	   5a7e	LAPPDKrang.elf
+Finished building: LAPPDKrang.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck LAPPDKrang.elf -hw ../../microblaze_0_hw_platform_0/system.xml -pe microblaze_0  |tee "LAPPDKrang.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_0_hw_platform_0/system.xml -pe
+microblaze_0 LAPPDKrang.elf 
+
+ELF file	: LAPPDKrang.elf
+elfcheck passed.
+Finished building: LAPPDKrang.elf.elfcheck
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+10:16:56 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+10:16:57 **** Auto Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+10:22:07 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+10:22:14 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building target: LAPPDKrang.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "LAPPDKrang.elf"  ./src/helloworld.o ./src/platform.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAPPDKrang.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size LAPPDKrang.elf  |tee "LAPPDKrang.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12798	   1372	   8996	  23166	   5a7e	LAPPDKrang.elf
+Finished building: LAPPDKrang.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck LAPPDKrang.elf -hw ../../microblaze_0_hw_platform_0/system.xml -pe microblaze_0  |tee "LAPPDKrang.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_0_hw_platform_0/system.xml -pe
+microblaze_0 LAPPDKrang.elf 
+
+ELF file	: LAPPDKrang.elf
+elfcheck passed.
+Finished building: LAPPDKrang.elf.elfcheck
+ 
+10:23:45 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+11:30:47 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:30:53 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+11:31:03 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+11:41:51 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:43:39 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+11:44:02 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+11:44:19 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+12:13:57 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+13:13:18 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+13:13:24 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+13:13:54 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+13:58:34 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+13:58:51 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+14:43:24 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+14:43:28 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+16:28:10 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+16:28:12 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+16:28:24 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+17:08:44 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+17:08:47 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+17:29:49 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+17:29:57 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+18:29:48 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+18:29:57 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+18:31:15 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+18:31:25 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+18:33:11 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+18:33:14 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+18:51:41 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+18:51:43 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.
+19:08:01 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+19:08:03 **** Incremental Build of configuration Release for project LAPPDKrang ****
+make all 
+make: Nothing to be done for `all'.

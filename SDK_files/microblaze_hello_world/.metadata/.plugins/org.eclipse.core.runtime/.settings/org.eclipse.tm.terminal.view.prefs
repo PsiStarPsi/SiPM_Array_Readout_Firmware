@@ -1,0 +1,7 @@
+Connectors.ConnectionType=org.eclipse.tm.internal.terminal.ssh.SshConnector
+Connectors.org.eclipse.tm.internal.terminal.ssh.SshConnector.Host=tcp\:localhost\:5132
+Connectors.org.eclipse.tm.internal.terminal.ssh.SshConnector.Keepalive=300
+Connectors.org.eclipse.tm.internal.terminal.ssh.SshConnector.Port=3121
+Connectors.org.eclipse.tm.internal.terminal.ssh.SshConnector.Timeout=5
+Connectors.org.eclipse.tm.internal.terminal.ssh.SshConnector.User=mtcuser@168.105.233.124
+eclipse.preferences.version=1

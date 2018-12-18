@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Documents/test_versions/stable_version/firmware-ethernet/ExampleProject/ise/scrodEthernetExample.ncd
+OUTFILE=/home/ise/Documents/test_versions/stable_version/firmware-ethernet/ExampleProject/ise/scrodEthernetExample.bit
+FAMILY=Spartan6
+PART=xc6slx150t-3fgg676
+WORKINGDIR=/home/ise/Documents/test_versions/stable_version/firmware-ethernet/ExampleProject/ise
+LICENSE=ISE
+USER_INFO=176018512_208276174_210685983_860

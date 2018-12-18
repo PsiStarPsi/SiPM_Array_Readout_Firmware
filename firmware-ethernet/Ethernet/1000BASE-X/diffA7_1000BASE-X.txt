@@ -1,0 +1,2 @@
+Common subdirectories: ./1000BASE-X/rtl and /Users/kevinkeefe/Desktop/A.20-AC701-uBlaze/A.20-AC701-uBlaze.srcs/sources_1/imports/src/firmware-ethernet/Ethernet/1000BASE-X/rtl
+Only in ./1000BASE-X: sim

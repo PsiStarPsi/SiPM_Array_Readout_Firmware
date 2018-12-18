@@ -1,0 +1,6 @@
+10:15:36 **** Build of project standalone_bsp_0 ****
+make -k all 
+make: *** No rule to make target `all'.
+
+10:15:36 Build Finished (took 68ms)
+

@@ -1,0 +1,23 @@
+04:28:42 **** Auto Build of project test_hello_bsp ****
+make -k all 
+libgen -hw ../microblaze_0_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../microblaze_0_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+ERROR:EDK:410 - bram -
+   /home/ise/Xilinx/SDK_files/microblaze_hello_world/test_hello_bsp/system.mss
+   line 21 - No IP instance named axi_bram_ctrl_0 is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+
+04:28:43 Build Finished (took 1s.239ms)
+

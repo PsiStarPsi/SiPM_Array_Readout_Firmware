@@ -1,0 +1,2 @@
+INST "*/axi_interconnect_inst/*clock_conv_inst/*_resync*" TNM = FFS "fifo_0_reset_resync";
+TIMESPEC "TS_fifo_0_reset_resync" = TO "fifo_0_reset_resync" TIG;

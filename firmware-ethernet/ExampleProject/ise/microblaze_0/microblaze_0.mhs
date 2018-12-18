@@ -1,0 +1,242 @@
+
+# ##############################################################################
+# Created by Base System Builder Wizard for Xilinx EDK 14.7 Build EDK_P.20131013
+# Thu Oct  4 03:38:17 2018
+# Target Board:  Custom
+# Family:    spartan6
+# Device:    xc6slx150t
+# Package:   fgg676
+# Speed Grade:  -3
+# ##############################################################################
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT RESET = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 0
+ PORT CLK = CLK, DIR = I, SIGIS = CLK, CLK_FREQ = 125000000
+ PORT microblaze_0_S0_AXIS_TLAST_pin = microblaze_0_S0_AXIS_TLAST, DIR = I
+ PORT microblaze_0_S0_AXIS_TDATA_pin = microblaze_0_S0_AXIS_TDATA, DIR = I, VEC = [31:0]
+ PORT microblaze_0_S0_AXIS_TVALID_pin = microblaze_0_S0_AXIS_TVALID, DIR = I
+ PORT microblaze_0_S0_AXIS_TREADY_pin = microblaze_0_S0_AXIS_TREADY, DIR = O
+ PORT microblaze_0_M0_AXIS_TLAST_pin = microblaze_0_M0_AXIS_TLAST, DIR = O
+ PORT microblaze_0_M0_AXIS_TDATA_pin = microblaze_0_M0_AXIS_TDATA, DIR = O, VEC = [31:0]
+ PORT microblaze_0_M0_AXIS_TVALID_pin = microblaze_0_M0_AXIS_TVALID, DIR = O
+ PORT microblaze_0_M0_AXIS_TREADY_pin = microblaze_0_M0_AXIS_TREADY, DIR = I
+ PORT clock_generator_0_CLKOUT0_pin = clk_100_0000MHz, DIR = O, SIGIS = CLK, CLK_FREQ = 75000000
+ PORT iomodule_0_IO_Addr_Strobe_pin = iomodule_0_IO_Addr_Strobe, DIR = O
+ PORT iomodule_0_IO_Read_Strobe_pin = iomodule_0_IO_Read_Strobe, DIR = O
+ PORT iomodule_0_IO_Write_Strobe_pin = iomodule_0_IO_Write_Strobe, DIR = O
+ PORT iomodule_0_IO_Address_pin = iomodule_0_IO_Address, DIR = O, VEC = [31:0]
+ PORT iomodule_0_IO_Byte_Enable_pin = iomodule_0_IO_Byte_Enable, DIR = O, VEC = [3:0]
+ PORT iomodule_0_IO_Write_Data_pin = iomodule_0_IO_Write_Data, DIR = O, VEC = [31:0]
+ PORT iomodule_0_IO_Read_Data_pin = iomodule_0_IO_Read_Data, DIR = I, VEC = [31:0]
+ PORT iomodule_0_IO_Ready_pin = iomodule_0_IO_Ready, DIR = I
+
+
+BEGIN proc_sys_reset
+ PARAMETER INSTANCE = proc_sys_reset_0
+ PARAMETER HW_VER = 3.00.a
+ PARAMETER C_EXT_RESET_HIGH = 0
+ PORT MB_Debug_Sys_Rst = proc_sys_reset_0_MB_Debug_Sys_Rst
+ PORT Dcm_locked = proc_sys_reset_0_Dcm_locked
+ PORT MB_Reset = proc_sys_reset_0_MB_Reset
+ PORT Slowest_sync_clk = clk_100_0000MHz
+ PORT Interconnect_aresetn = proc_sys_reset_0_Interconnect_aresetn
+ PORT Ext_Reset_In = RESET
+ PORT BUS_STRUCT_RESET = proc_sys_reset_0_BUS_STRUCT_RESET
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_1_l_bram_ctrl
+ PARAMETER HW_VER = 3.10.c
+ PARAMETER C_BASEADDR = 0x00010000
+ PARAMETER C_HIGHADDR = 0x0001FFFF
+ BUS_INTERFACE SLMB = microblaze_0_ilmb
+ BUS_INTERFACE BRAM_PORT = microblaze_1_l_bram_ctrl_BRAM_PORT
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_1_d_bram_ctrl
+ PARAMETER HW_VER = 3.10.c
+ PARAMETER C_BASEADDR = 0x00010000
+ PARAMETER C_HIGHADDR = 0x0001FFFF
+ BUS_INTERFACE SLMB = microblaze_0_dlmb
+ BUS_INTERFACE BRAM_PORT = microblaze_1_d_bram_ctrl_BRAM_PORT
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = microblaze_1
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = microblaze_1_l_bram_ctrl_BRAM_PORT
+ BUS_INTERFACE PORTB = microblaze_1_d_bram_ctrl_BRAM_PORT
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = microblaze_0_ilmb
+ PARAMETER HW_VER = 2.00.b
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT LMB_CLK = clk_100_0000MHz
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_0_i_bram_ctrl
+ PARAMETER HW_VER = 3.10.c
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x0000FFFF
+ BUS_INTERFACE SLMB = microblaze_0_ilmb
+ BUS_INTERFACE BRAM_PORT = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = microblaze_0_dlmb
+ PARAMETER HW_VER = 2.00.b
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT LMB_CLK = clk_100_0000MHz
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_0_d_bram_ctrl
+ PARAMETER HW_VER = 3.10.c
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x0000FFFF
+ BUS_INTERFACE SLMB = microblaze_0_dlmb
+ BUS_INTERFACE BRAM_PORT = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = microblaze_0_bram_block
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
+ BUS_INTERFACE PORTB = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.50.c
+ PARAMETER C_INTERCONNECT = 2
+ PARAMETER C_USE_BARREL = 1
+ PARAMETER C_USE_FPU = 2
+ PARAMETER C_DEBUG_ENABLED = 1
+ PARAMETER C_ICACHE_BASEADDR = 0x00000000
+ PARAMETER C_ICACHE_HIGHADDR = 0x3FFFFFFF
+ PARAMETER C_USE_ICACHE = 0
+ PARAMETER C_CACHE_BYTE_SIZE = 32768
+ PARAMETER C_ICACHE_ALWAYS_USED = 0
+ PARAMETER C_DCACHE_BASEADDR = 0x40000000
+ PARAMETER C_DCACHE_HIGHADDR = 0x7FFFFFFF
+ PARAMETER C_USE_DCACHE = 0
+ PARAMETER C_DCACHE_BYTE_SIZE = 32768
+ PARAMETER C_DCACHE_ALWAYS_USED = 0
+ PARAMETER C_FSL_LINKS = 1
+ PARAMETER C_STREAM_INTERCONNECT = 1
+ PARAMETER C_ICACHE_LINE_LEN = 8
+ PARAMETER C_DCACHE_LINE_LEN = 8
+ PARAMETER C_DCACHE_USE_WRITEBACK = 1
+ PARAMETER C_USE_HW_MUL = 2
+ PARAMETER C_USE_DIV = 1
+ PARAMETER C_AREA_OPTIMIZED = 0
+ PARAMETER C_ICACHE_STREAMS = 1
+ PARAMETER C_ICACHE_VICTIMS = 8
+ PARAMETER C_USE_BRANCH_TARGET_CACHE = 1
+ PARAMETER C_NUMBER_OF_PC_BRK = 1
+ PARAMETER C_M_AXI_D_BUS_EXCEPTION = 0
+ PARAMETER C_M_AXI_I_BUS_EXCEPTION = 1
+ PARAMETER C_ICACHE_DATA_WIDTH = 1
+ PARAMETER C_DCACHE_VICTIMS = 8
+ PARAMETER C_DCACHE_DATA_WIDTH = 1
+ PARAMETER C_USE_MMU = 3
+ PARAMETER C_MMU_ZONES = 2
+ BUS_INTERFACE DEBUG = microblaze_0_debug
+ BUS_INTERFACE M_AXI_DP = axi4lite_0
+ BUS_INTERFACE M_AXI_IP = axi4lite_0
+ BUS_INTERFACE INTERRUPT = iomodule_0_INTERRUPT
+ BUS_INTERFACE DLMB = microblaze_0_dlmb
+ BUS_INTERFACE ILMB = microblaze_0_ilmb
+ PORT MB_RESET = proc_sys_reset_0_MB_Reset
+ PORT CLK = clk_100_0000MHz
+ PORT S0_AXIS_TLAST = microblaze_0_S0_AXIS_TLAST
+ PORT S0_AXIS_TDATA = microblaze_0_S0_AXIS_TDATA
+ PORT S0_AXIS_TVALID = microblaze_0_S0_AXIS_TVALID
+ PORT S0_AXIS_TREADY = microblaze_0_S0_AXIS_TREADY
+ PORT M0_AXIS_TLAST = microblaze_0_M0_AXIS_TLAST
+ PORT M0_AXIS_TDATA = microblaze_0_M0_AXIS_TDATA
+ PORT M0_AXIS_TVALID = microblaze_0_M0_AXIS_TVALID
+ PORT M0_AXIS_TREADY = microblaze_0_M0_AXIS_TREADY
+END
+
+BEGIN iomodule
+ PARAMETER INSTANCE = iomodule_0
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_USE_IO_BUS = 1
+ PARAMETER C_BASEADDR = 0x44A00000
+ PARAMETER C_HIGHADDR = 0x44A07FFF
+ PARAMETER C_IO_BASEADDR = 0x44A10000
+ PARAMETER C_IO_HIGHADDR = 0x44A1FFFF
+ BUS_INTERFACE SLMB = microblaze_0_dlmb
+ BUS_INTERFACE INTERRUPT = iomodule_0_INTERRUPT
+ PORT CLK = clk_100_0000MHz
+ PORT IO_Addr_Strobe = iomodule_0_IO_Addr_Strobe
+ PORT IO_Read_Strobe = iomodule_0_IO_Read_Strobe
+ PORT IO_Write_Strobe = iomodule_0_IO_Write_Strobe
+ PORT IO_Address = iomodule_0_IO_Address
+ PORT IO_Byte_Enable = iomodule_0_IO_Byte_Enable
+ PORT IO_Write_Data = iomodule_0_IO_Write_Data
+ PORT IO_Read_Data = iomodule_0_IO_Read_Data
+ PORT IO_Ready = iomodule_0_IO_Ready
+END
+
+BEGIN mdm
+ PARAMETER INSTANCE = debug_module
+ PARAMETER HW_VER = 2.10.a
+ PARAMETER C_INTERCONNECT = 2
+ PARAMETER C_USE_UART = 1
+ PARAMETER C_BASEADDR = 0x41400000
+ PARAMETER C_HIGHADDR = 0x4140ffff
+ BUS_INTERFACE MBDEBUG_0 = microblaze_0_debug
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT Debug_SYS_Rst = proc_sys_reset_0_MB_Debug_Sys_Rst
+ PORT S_AXI_ACLK = clk_100_0000MHz
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = clock_generator_0
+ PARAMETER HW_VER = 4.03.a
+ PARAMETER C_EXT_RESET_HIGH = 0
+ PARAMETER C_CLKIN_FREQ = 125000000
+ PARAMETER C_CLKOUT0_FREQ = 75000000
+ PARAMETER C_CLKOUT0_GROUP = NONE
+ PORT LOCKED = proc_sys_reset_0_Dcm_locked
+ PORT CLKOUT0 = clk_100_0000MHz
+ PORT RST = RESET
+ PORT CLKIN = CLK
+END
+
+BEGIN axi_timer
+ PARAMETER INSTANCE = axi_timer_0
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_COUNT_WIDTH = 32
+ PARAMETER C_ONE_TIMER_ONLY = 0
+ PARAMETER C_BASEADDR = 0x41c00000
+ PARAMETER C_HIGHADDR = 0x41c0ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+END
+
+BEGIN axi_timebase_wdt
+ PARAMETER INSTANCE = axi_timebase_wdt_0
+ PARAMETER HW_VER = 1.01.a
+ PARAMETER C_WDT_INTERVAL = 30
+ PARAMETER C_WDT_ENABLE_ONCE = 0
+ PARAMETER C_BASEADDR = 0x41a00000
+ PARAMETER C_HIGHADDR = 0x41a0ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+END
+
+BEGIN axi_interconnect
+ PARAMETER INSTANCE = axi4lite_0
+ PARAMETER HW_VER = 1.06.a
+ PARAMETER C_INTERCONNECT_CONNECTIVITY_MODE = 0
+ PORT INTERCONNECT_ARESETN = proc_sys_reset_0_Interconnect_aresetn
+ PORT INTERCONNECT_ACLK = clk_100_0000MHz
+END
+

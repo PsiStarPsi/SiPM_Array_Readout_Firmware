@@ -1,0 +1,27 @@
+# Interface S00_AXIS asynchronous clock crossing constraints.
+NET  "*/inst_si_datapath[0].dynamic_datapath_si/*s_and_m_aresetn_i" TIG;
+INST "*/inst_si_datapath[0].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram*" TNM="TNM_AXIS_FIFO_1_S00_AXIS_RAMSOURCE";
+INST "*/inst_si_datapath[0].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout*" TNM="TNM_AXIS_FIFO_1_S00_AXIS_FFDEST";
+TIMESPEC "TS_AXIS_FIFO_1_S00_AXIS_RAM_FF" = FROM "TNM_AXIS_FIFO_1_S00_AXIS_RAMSOURCE" TO "TNM_AXIS_FIFO_1_S00_AXIS_FFDEST" 10000 ps DATAPATHONLY;
+INST "*/inst_si_datapath[0].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_?" TNM="TNM_AXIS_FIFO_1_S00_AXIS_RD_PNTR_GC";
+INST "*/inst_si_datapath[0].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_?" TNM="TNM_AXIS_FIFO_1_S00_AXIS_WR_PNTR_GC";
+INST "*/inst_si_datapath[0].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_*" TNM="TNM_AXIS_FIFO_1_S00_AXIS_WR_STG_INST_Q";
+INST "*/inst_si_datapath[0].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_*" TNM="TNM_AXIS_FIFO_1_S00_AXIS_RD_STG_INST_Q";
+TIMEGRP "TG_AXIS_FIFO_1_S00_AXIS_SRC_PNTR_GC" = "TNM_AXIS_FIFO_1_S00_AXIS_RD_PNTR_GC" "TNM_AXIS_FIFO_1_S00_AXIS_WR_PNTR_GC" ;
+TIMEGRP "TG_AXIS_FIFO_1_S00_AXIS_DEST_STG_INST_Q" = "TNM_AXIS_FIFO_1_S00_AXIS_WR_STG_INST_Q" "TNM_AXIS_FIFO_1_S00_AXIS_RD_STG_INST_Q" ;
+TIMESPEC "TS_AXIS_FIFO_1_S00_AXIS_SRC_PNTR_TO_DEST_STG" = FROM "TG_AXIS_FIFO_1_S00_AXIS_SRC_PNTR_GC" TO "TG_AXIS_FIFO_1_S00_AXIS_DEST_STG_INST_Q" 10000 ps DATAPATHONLY;
+
+# Interface S01_AXIS asynchronous clock crossing constraints.
+NET  "*/inst_si_datapath[1].dynamic_datapath_si/*s_and_m_aresetn_i" TIG;
+INST "*/inst_si_datapath[1].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram*" TNM="TNM_AXIS_FIFO_1_S01_AXIS_RAMSOURCE";
+INST "*/inst_si_datapath[1].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout*" TNM="TNM_AXIS_FIFO_1_S01_AXIS_FFDEST";
+TIMESPEC "TS_AXIS_FIFO_1_S01_AXIS_RAM_FF" = FROM "TNM_AXIS_FIFO_1_S01_AXIS_RAMSOURCE" TO "TNM_AXIS_FIFO_1_S01_AXIS_FFDEST" 10000 ps DATAPATHONLY;
+INST "*/inst_si_datapath[1].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_?" TNM="TNM_AXIS_FIFO_1_S01_AXIS_RD_PNTR_GC";
+INST "*/inst_si_datapath[1].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_?" TNM="TNM_AXIS_FIFO_1_S01_AXIS_WR_PNTR_GC";
+INST "*/inst_si_datapath[1].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_*" TNM="TNM_AXIS_FIFO_1_S01_AXIS_WR_STG_INST_Q";
+INST "*/inst_si_datapath[1].dynamic_datapath_si/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_*" TNM="TNM_AXIS_FIFO_1_S01_AXIS_RD_STG_INST_Q";
+TIMEGRP "TG_AXIS_FIFO_1_S01_AXIS_SRC_PNTR_GC" = "TNM_AXIS_FIFO_1_S01_AXIS_RD_PNTR_GC" "TNM_AXIS_FIFO_1_S01_AXIS_WR_PNTR_GC" ;
+TIMEGRP "TG_AXIS_FIFO_1_S01_AXIS_DEST_STG_INST_Q" = "TNM_AXIS_FIFO_1_S01_AXIS_WR_STG_INST_Q" "TNM_AXIS_FIFO_1_S01_AXIS_RD_STG_INST_Q" ;
+TIMESPEC "TS_AXIS_FIFO_1_S01_AXIS_SRC_PNTR_TO_DEST_STG" = FROM "TG_AXIS_FIFO_1_S01_AXIS_SRC_PNTR_GC" TO "TG_AXIS_FIFO_1_S01_AXIS_DEST_STG_INST_Q" 10000 ps DATAPATHONLY;
+
+

@@ -1,0 +1,11 @@
+# Interface M00_AXIS asynchronous clock crossing constraints.
+NET  "*/inst_mi_datapath[0].dynamic_datapath_mi/*s_and_m_aresetn_i" TIG;
+INST "*/inst_mi_datapath[0].dynamic_datapath_mi/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_?" TNM="TNM_AXIS_FIFO_0_M00_AXIS_RD_PNTR_GC";
+INST "*/inst_mi_datapath[0].dynamic_datapath_mi/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_?" TNM="TNM_AXIS_FIFO_0_M00_AXIS_WR_PNTR_GC";
+INST "*/inst_mi_datapath[0].dynamic_datapath_mi/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_*" TNM="TNM_AXIS_FIFO_0_M00_AXIS_WR_STG_INST_Q";
+INST "*/inst_mi_datapath[0].dynamic_datapath_mi/*/xst_fifo_generator/g*/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_*" TNM="TNM_AXIS_FIFO_0_M00_AXIS_RD_STG_INST_Q";
+TIMEGRP "TG_AXIS_FIFO_0_M00_AXIS_SRC_PNTR_GC" = "TNM_AXIS_FIFO_0_M00_AXIS_RD_PNTR_GC" "TNM_AXIS_FIFO_0_M00_AXIS_WR_PNTR_GC" ;
+TIMEGRP "TG_AXIS_FIFO_0_M00_AXIS_DEST_STG_INST_Q" = "TNM_AXIS_FIFO_0_M00_AXIS_WR_STG_INST_Q" "TNM_AXIS_FIFO_0_M00_AXIS_RD_STG_INST_Q" ;
+TIMESPEC "TS_AXIS_FIFO_0_M00_AXIS_SRC_PNTR_TO_DEST_STG" = FROM "TG_AXIS_FIFO_0_M00_AXIS_SRC_PNTR_GC" TO "TG_AXIS_FIFO_0_M00_AXIS_DEST_STG_INST_Q" 10000 ps DATAPATHONLY;
+
+

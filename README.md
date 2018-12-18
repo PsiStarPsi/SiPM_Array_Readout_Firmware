@@ -1,3 +1,1 @@
 # SiPM_Array_Readout_Firmware
-# SiPM_Array_Readout_Firmware
-# SiPM_Array_Readout_Firmware

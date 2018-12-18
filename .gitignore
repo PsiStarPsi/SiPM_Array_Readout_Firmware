@@ -1,0 +1,54 @@
+#global .gitignore file
+#ignore all generated html files
+*.html
+
+#VHDL file types to ignore
+*.asy
+*.bat
+*.bld
+*.cgp
+*.csv
+*.do
+*.filter
+*.key
+*.lst
+*.lso
+*.map
+*.mem
+*.ngc
+*.ngd
+*.ngr
+*.ncd
+*.out
+*.pad
+*.par
+*.pcf
+*.prj
+*.ptwx
+*.scr
+*.sym
+*.stx
+*.syr
+*.tcl
+*.twx
+*.twr
+*.unroutes
+*.vdbl
+*.vdbx
+*.xbcd
+*.xdc
+*.xml
+*.xmsgs
+*.xrpt
+*.xpi
+*.xst
+*.xrpt
+*.mrp
+*.ngm
+
+#tentative ignore of xco like files
+*.in
+
+#any temp files created by emacs
+*~
+

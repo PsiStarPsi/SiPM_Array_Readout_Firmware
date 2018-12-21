@@ -35,6 +35,22 @@ TIMESPEC "TS_usrClkSource"=PERIOD "U_GtpS6/usrClkSource" 8 ns HIGH 50 %;
 #INST "*cdc_reg1" TNM_NET = FFS "CLOCK_DOMAIN_CROSSING_REGS";
 #TIMESPEC TS_CDC = FROM "EVERYTHING" TO "CLOCK_DOMAIN_CROSSING_REGS" 8 ns DATAPATHONLY;
 
+####################################################
+################ ASIC Serial Interfaces ############
+####################################################
+NET AsicIn_PCLK<0> LOC =  R2;
+NET AsicIn_PCLK<1> LOC =  K5;
+NET AsicIn_PCLK<2> LOC =  N6;
+NET AsicIn_PCLK<3> LOC = G20;
+NET AsicIn_PCLK<4> LOC =  T1;
+NET AsicIn_PCLK<5> LOC =  L4;
+NET AsicIn_PCLK<6> LOC =  N8;
+NET AsicIn_PCLK<7> LOC = R19;
+# serial interface for register bank inside ASIC
+NET AsicIn_REG_CLEAR LOC = AC22; # REGCLR
+NET AsicIn_SCLK      LOC =  V18; # on SCROD revA2, this is overloaded with the SPI signals (which shouldn't matter during normal operation)
+NET AsicIn_SIN       LOC =  W19; # on SCROD revA2, this is overloaded with the SPI signals (which shouldn't matter during normal operation)
+
 #------------------------------------------------------------------------------------------------------
 #------------------------------------------Side A------------------------------------------------------
 #------------------------------------------------------------------------------------------------------

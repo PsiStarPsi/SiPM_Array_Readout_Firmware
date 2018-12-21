@@ -15,6 +15,11 @@ entity RegControl is
       -- Clock and synchronous reset
       clk            : in  sl;
       sRst           : in  sl;
+		-- Pins to external devices
+      AsicIn_REG_CLEAR : out sl;
+      AsicIn_PCLK      : out slv(7 downto 0);
+      AsicIn_SCLK      : out sl;
+      AsicIn_SIN       : out sl;
       -- Register interface to Microblaze IO module
       regAddr        : in  slv(31 downto 0);
       regAddrStrb    : in  sl;
@@ -153,17 +158,11 @@ begin
       port map (
          clk           => clk,
          sRst          => sRst,
-         -- Pin connections to external devices
-      --   I2C_SCL       => I2C_SCL,
-       --  I2C_SDA       => I2C_SDA,
-        -- adcSclk       => adcSclk,
-        -- adcSen        => adcSen,
-       --  adcSdata      => adcSdata,
-       --  adcSdout      => adcSdout,
-       --  henrySpiClk   => henrySpiClk, 
-       --  henrySpiData  => henrySpiData,
-       --  henrySpiLoad  => henrySpiLoad,
-       --  henrySpiRdBit => henrySpiRdBit, 
+	      -- Pins to external devices
+         AsicIn_REG_CLEAR => AsicIn_REG_CLEAR,
+         AsicIn_PCLK      => AsicIn_PCLK,
+         AsicIn_SCLK      => AsicIn_SCLK,
+         AsicIn_SIN       => AsicIn_SIN,
          -- Register interfaces to this controller
          regAddr       => curReg.regAddr,
          regWrData     => curReg.regWrData,

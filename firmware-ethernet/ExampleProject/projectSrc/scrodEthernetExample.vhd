@@ -10,8 +10,6 @@ use UNISIM.VComponents.all;
 
 entity scrodEthernetExample is
    generic (
-      REG_ADDR_BITS_G : integer := 16;
-      REG_DATA_BITS_G : integer := 16;
       NUM_IP_G        : integer := 2;
       GATE_DELAY_G    : time := 1 ns
    );
@@ -37,6 +35,12 @@ entity scrodEthernetExample is
 --		AsicOut_TRIG_OUTPUT_R3_C1_CH : in slv(7 downto 0);
 --		AsicOut_TRIG_OUTPUT_R3_C2_CH : in slv(7 downto 0);
 --		AsicOut_TRIG_OUTPUT_R3_C3_CH : in slv(7 downto 0);
+		
+		-- Serial interfaces to IRS3D
+		AsicIn_REG_CLEAR : out sl;
+		AsicIn_PCLK      : out slv(7 downto 0);
+		AsicIn_SCLK      : out sl;
+		AsicIn_SIN       : out sl;
 		
 		-- Direct GT connections
       gtTxP        : out sl;
@@ -252,6 +256,11 @@ microblaze_0 : entity work.self_wrapper_axi_microblaze
 		regWrData  	  => iomodule_0_IO_Write_Data_pin,
 		regRdData 	  => iomodule_0_IO_Read_Data_pin,
 		regDataByteEn => iomodule_0_IO_Byte_Enable_pin,
+		-- Pins to external devices
+		AsicIn_REG_CLEAR => AsicIn_REG_CLEAR,
+      AsicIn_PCLK      => AsicIn_PCLK,
+      AsicIn_SCLK      => AsicIn_SCLK,
+      AsicIn_SIN       => AsicIn_SIN,
 		--signals below added from broken, must each cross their own clock domain..
 		data_addr_aft    => data_addr_afts,
 		data_addr_bef    => data_addr_befs,

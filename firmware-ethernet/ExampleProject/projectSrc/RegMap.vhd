@@ -12,6 +12,11 @@ entity RegMap is
   port (
     clk           : in  sl;
     sRst          : in  sl;
+	 -- Pins to external devices
+    AsicIn_REG_CLEAR : out sl;
+    AsicIn_PCLK      : out slv(7 downto 0);
+    AsicIn_SCLK      : out sl;
+    AsicIn_SIN       : out sl;
     -- Register interfaces to UART controller
     regAddr       : in  slv(31 downto 0);
     regWrData     : in  slv(31 downto 0);
@@ -65,6 +70,15 @@ architecture Behavioral of RegMap is
   -- Signals for itchy and scratchy
   signal itchy_scratchy  : slv(31 downto 0);     
     
+  -- IRS reset signal	 
+  signal iAsicReset : sl := '0';
+
+  -- Shim address interfaces signals to the IRS
+  signal irsReq : sl := '0';
+  signal irsOp  : sl := '0';
+  signal irsAck : sl := '0';
+  signal irsRdData : slv(31 downto 0) := (others => '0');
+	 
   constant BITS_ADDR_C   : integer := 32;               
   constant BITS_DATA_C   : integer := 32;
   
@@ -89,6 +103,8 @@ begin
 	data_addr_aft <= data_addr_afts;
 	soft_trigger  <= soft_trigger_s;
 	
+	AsicIn_REG_CLEAR <= iAsicReset;
+	
 	-----------------------------------------------------------------------------------
 	----------------------------keefe changes 11/5/2018--------------------------------
 	-----------------------------------------------------------------------------------
@@ -101,7 +117,10 @@ begin
       -- else
       -- Default for all registers write and read in one cycle.
       -- This can be overridden below for specific registers.
-      regAck    <= regReq;
+      regAck     <= regReq;
+		irsReq     <= '0';
+		irsOp      <= '0';
+		iAsicReset <= '0';
 		
 		-- Defaults for pulsed signals
 		soft_trigger_s <= '0';
@@ -202,8 +221,21 @@ begin
 								if regOp = '1' then
 									soft_trigger_s <= regReq;
 								end if;
-				when others => regRdData <= x"B00BCAFE";
-			end case;
+			-- Reset the IRS3D registers
+         when x"030" => regRdData <= (others => '0');
+			               iAsicReset <= regOp and regReq;
+         -- other invalid cases
+			when others => regRdData <= x"B00BCAFE";			 
+		  end case;
+
+	---------------------------------------------------------
+	-------- Add IRS3D register control ---------------------
+	---------------------------------------------------------
+      elsif regAddr(15 downto 14) = x"1" then
+		   irsReq    <= regReq;
+			irsOp     <= regOp;
+			regAck    <= irsAck;
+			regRdData <= irsRdData;
 		
 		else
         regRdData    <= x"DEADC0DE";
@@ -233,6 +265,25 @@ begin
       dnaOut    => deviceDna
       );
   
-  
+  U_MultiIrsRegControl : entity work.MultiIrsRegControl
+	 generic map (
+	   NUM_IRS_G    => 8
+    )
+    port map (
+      -- Core CLK
+      clk           => clk,
+      -- ASIC pins
+      AsicIn_PCLK   => AsicIn_PCLK,
+      AsicIn_SCLK   => AsicIn_SCLK,
+      AsicIn_SIN    => AsicIn_SIN, 
+      -- Register interfaces 
+      irsNumber     => regAddr(13 downto 10),   --: in  slv( 3 downto 0);
+      irsAddr       => regAddr( 9 downto  2),   --: in  slv( 7 downto 0);
+      irsWrData     => regWrData(11 downto 0), --: in  slv(11 downto 0);
+      irsRdData     => irsRdData, --: out slv(31 downto 0);
+      irsReq        => irsReq,    --: in  sl;
+      irsOp         => irsOp,     --: in  sl;
+      irsAck        => irsAck     --: out sl
+    );
 
 end Behavioral;
